@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshana Jayasinghe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="loading">
+
+    <div id="preloader">
+        <div class="loader-text">
+            <span>H</span>
+            <span>A</span>
+            <span>R</span>
+            <span>S</span>
+            <span>H</span>
+            <span>A</span>
+            <span>N</span>
+            <span>A</span>
+            <span>.</span>
+        </div>
+    </div>
+
+    <div id="custom-cursor"></div>
+
+    <header class="main-header">
+        <nav>
+            <a href="#hero" class="nav-link custom-cursor-target">Harshana.</a>
+            <div class="nav-links">
+                <a href="#work" class="nav-link custom-cursor-target">Work</a>
+                <a href="#about" class="nav-link custom-cursor-target">About</a>
+                <a href="#contact" class="nav-link custom-cursor-target">Contact</a>
+                <button id="theme-toggle" class="custom-cursor-target" aria-label="Toggle light and dark theme">
+                    ☀️
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="full-screen-section reveal">
+            <div class="hero-content">
+                <h1 class="text-large reveal-item">Software.</h1>
+                <h1 class="text-large reveal-item">Engineer.</h1>
+                <p class="hero-subtext reveal-item">Building and scaling high-performance, full-stack applications from concept to deployment.</p>
+                <a href="#work" class="cta-button custom-cursor-target reveal-item">See My Projects →</a>
+            </div>
+        </section>
+
+        <section id="work" class="section-padding">
+            <h2 class="section-title reveal">Featured Projects</h2>
+            <div class="work-grid">
+                <div class="project-card reveal custom-cursor-target" data-category="Full-Stack Application">
+                    <img src="https://via.placeholder.com/600x400/333333/FFFFFF?text=Project+One" alt="Project One Mockup">
+                    <div class="project-info">
+                        <h3>E-commerce REST API</h3>
+                        <p>A scalable back-end built with Node.js, Express, and MongoDB.</p>
+                        <a href="#" class="view-link custom-cursor-target">View Case Study</a>
+                    </div>
+                </div>
+                <div class="project-card reveal custom-cursor-target" data-category="Microservice Architecture">
+                    <img src="https://via.placeholder.com/600x400/555555/FFFFFF?text=Project+Two" alt="Project Two Mockup">
+                    <div class="project-info">
+                        <h3>Real-time Data Dashboard</h3>
+                        <p>Implementing WebSocket communication and data visualization.</p>
+                        <a href="#" class="view-link custom-cursor-target">View Case Study</a>
+                    </div>
+                </div>
+                <div class="project-card reveal custom-cursor-target" data-category="Frontend/UX">
+                    <img src="https://via.placeholder.com/600x400/777777/FFFFFF?text=Project+Three" alt="Project Three Mockup">
+                    <div class="project-info">
+                        <h3>Interactive Portfolio V2</h3>
+                        <p>A high-performance interface with optimized data fetching.</p>
+                        <a href="#" class="view-link custom-cursor-target">View Case Study</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section-padding reveal">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-text reveal-item">I am <b>Harshana</b>, a <b>Full-Stack Software Engineer</b> focused on developing end-to-end solutions. I enjoy mastering the entire application lifecycle, from designing secure back-end systems and scalable databases to crafting responsive, interactive client-side interfaces.</p>
+            <ul class="skills-list reveal-item">
+                <li><b>Frontend:</b> HTML5, CSS/SASS, Vanilla JavaScript</li>
+                <li><b>Backend:</b> Node.js, Python, REST APIs, Microservices</li>
+                <li><b>Database:</b> SQL (PostgreSQL, MySQL) & NoSQL (MongoDB)</li>
+                <li><b>Deployment:</b> CI/CD, Docker, Cloud Platforms (AWS/Azure/GCP)</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="full-screen-section reveal">
+            <h2 class="section-title reveal-item">Let's Connect.</h2>
+            <p class="contact-subtext reveal-item">Have a project? I'm always open to discussing new opportunities.</p>
+            <div class="contact-links reveal-item">
+                <a href="mailto:hello@example.com" class="cta-button custom-cursor-target">Email Me</a>
+                <a href="#" class="custom-cursor-target social-link">LinkedIn</a>
+                <a href="#" class="custom-cursor-target social-link">GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
