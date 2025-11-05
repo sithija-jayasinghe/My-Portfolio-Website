@@ -41,7 +41,6 @@ a {
     transition: color 0.3s;
 }
 
-/* Animated Background Grid */
 .bg-grid {
     position: fixed;
     top: 0;
@@ -70,7 +69,6 @@ a {
     100% { transform: translate(50px, 50px); }
 }
 
-/* Floating Particles */
 .particle {
     position: fixed;
     width: 8px;
@@ -395,7 +393,6 @@ body.dark-mode .main-header {
     transform: translateX(5px);
 }
 
-/* Articles Section Styles */
 .articles-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));

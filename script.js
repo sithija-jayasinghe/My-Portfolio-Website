@@ -1,9 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const body = document.body;
     
-    // ------------------------------------
-    // Create Floating Particles
-    // ------------------------------------
     function createParticles() {
         for (let i = 0; i < 30; i++) {
             const particle = document.createElement('div');
@@ -16,14 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
-    // Wait for page to load before creating particles
     setTimeout(() => {
         createParticles();
     }, 1600);
 
-    // ------------------------------------
-    // Preloader Logic
-    // ------------------------------------
     window.addEventListener('load', () => {
         setTimeout(() => {
             body.classList.remove('loading');
@@ -31,9 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1500); 
     });
 
-    // ------------------------------------
-    // Custom Cursor Logic
-    // ------------------------------------
     const customCursor = document.getElementById('custom-cursor');
     const targetElements = document.querySelectorAll('.custom-cursor-target');
 
@@ -61,9 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
         el.addEventListener('mouseleave', () => customCursor.classList.remove('expanded'));
     });
 
-    // ------------------------------------
-    // Theme Toggle (Light/Dark Mode)
-    // ------------------------------------
     const themeToggle = document.getElementById('theme-toggle');
     
     function setTheme(theme) {
@@ -95,9 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
         setTheme(newTheme);
     });
 
-    // ------------------------------------
-    // Scroll Reveal Animations (Intersection Observer)
-    // ------------------------------------
     const revealElements = document.querySelectorAll('.reveal, .reveal-item');
     
     const observerOptions = {
@@ -118,9 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // ------------------------------------
-    // Scroll Progress Bar
-    // ------------------------------------
     const scrollProgress = document.querySelector('.scroll-progress');
     
     window.addEventListener('scroll', () => {
@@ -130,9 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollProgress.style.width = scrollPercent + '%';
     });
 
-    // ------------------------------------
-    // Header Scroll Effect
-    // ------------------------------------
     const header = document.querySelector('.main-header');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 100) {
@@ -142,9 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // ------------------------------------
-    // 3D Tilt Effect on Project Cards (Desktop Only)
-    // ------------------------------------
     const isMobile = window.matchMedia("(max-width: 768px)").matches;
     
     if (!isMobile) {
@@ -169,9 +144,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        // ------------------------------------
-        // 3D Tilt Effect on Article Cards (Desktop Only)
-        // ------------------------------------
         const articleCards = document.querySelectorAll('.article-card');
         articleCards.forEach(card => {
             card.addEventListener('mousemove', (e) => {
